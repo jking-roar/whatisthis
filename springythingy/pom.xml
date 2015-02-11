@@ -20,11 +20,11 @@
         <!-- Expression Language (depends on spring-core)
             Define this if you use Spring Expression APIs
             (org.springframework.expression.*)-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-expression</artifactId>-->
-            <!--<version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
         <!-- Bean Factory and JavaBeans utilities (depends on spring-core)
             Define this if you use Spring Bean APIs
             (org.springframework.beans.*)-->
@@ -37,11 +37,11 @@
             (depends on spring-core, spring-beans)
             Define this if you use Spring AOP APIs
             (org.springframework.aop.*)-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-aop</artifactId>-->
-            <!--<version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
         <!-- Application Context
             (depends on spring-core, spring-expression, spring-aop, spring-beans)
             This is the central artifact for Spring's Dependency Injection Container
