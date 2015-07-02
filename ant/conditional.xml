@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="doTest" basedir=".">
+    <target name="setup">
+        <script language="javascript"><![CDATA[
+        var resultOfCalculation = 7 < 3;
+        project.setProperty('calculation.result', resultOfCalculation);
+        ]]></script>
+        <condition property="my.property">
+            <equals arg1="${calculation.result}" arg2="true"/>
+        </condition>
+    </target>
+    <target name="doTest"
+            depends="setup,onlyIfGood,onlyIfBad">
+        <echo message="tested"/>
+    </target>
+    <target name="onlyIfGood" if="my.property">
+        <echo message="all good"/>
+    </target>
+    <target name="onlyIfBad" unless="my.property">
+        <echo message="no way"/>
+    </target>
+
+    <target name="why-run-this">
+        <echo message="why am I running?"/>
+    </target>
+    <target name="otherTest"
+            depends="setup,why-run-this"
+            if="my.property">
+        <echo message="I am running"/>
+    </target>
+
+</project>
