@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kingjoshdavid</groupId>
-    <artifactId>study-java-fun</artifactId>
+    <artifactId>javafun</artifactId>
     <packaging>pom</packaging>
     <version>none</version>
     <build>
@@ -19,6 +19,6 @@
     </build>
     <modules>
         <module>plain-jain</module>
-        <!--<module>spring-boot</module>-->
+        <module>spring-boot</module>
     </modules>
 </project>
