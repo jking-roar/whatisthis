@@ -1,0 +1,19 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>webapp-project</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.1.4.RELEASE</version>
+        </dependency>
+    </dependencies>
+    <groupId>com.kingjoshdavid</groupId>
+    <version>0.0.1</version>
+    <packaging>war</packaging>
+</project>
