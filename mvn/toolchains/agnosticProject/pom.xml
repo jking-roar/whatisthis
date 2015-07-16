@@ -1,0 +1,13 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.kingjoshdavid</groupId>
+        <artifactId>toolchains-test</artifactId>
+        <version>the_best</version>
+    </parent>
+
+    <artifactId>agnosticProject</artifactId>
+    <description>This project doesn't care which java runs</description>
+    
+</project>

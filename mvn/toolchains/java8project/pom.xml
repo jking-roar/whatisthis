@@ -7,6 +7,7 @@
     </parent>
 
     <artifactId>toolchain_java8</artifactId>
+    <description>This project needs to be compiled using java 8</description>
 
     <build>
         <plugins>

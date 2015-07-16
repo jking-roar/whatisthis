@@ -1,8 +1,12 @@
 import java.util.ArrayList;
 
 public class OnlyCompilableInJava6 {
-    public static void main(String[] args) throws Foo {
-        new OnlyCompilableInJava6().willNotCompileInJava8();
+    public static void main(String[] args) {
+        try {
+            new OnlyCompilableInJava6().willNotCompileInJava8();
+        } catch (Foo foo) {
+            System.out.println(foo + " happened");
+        }
     }
 
 //    private void willNotCompileInJava6() {

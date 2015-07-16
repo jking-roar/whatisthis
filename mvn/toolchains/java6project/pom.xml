@@ -7,6 +7,7 @@
     </parent>
 
     <artifactId>toolchain_java6</artifactId>
+    <description>This project needs to be compiled using java 6</description>
 
     <build>
         <plugins>
@@ -17,6 +18,7 @@
                 <configuration>
                     <target>1.6</target>
                     <source>1.6</source>
+
                 </configuration>
             </plugin>
             <plugin>
