@@ -1,4 +1,4 @@
-= look at the toolchains plugin =
+# look at the toolchains plugin
 
 I have a complicated build that uses java 6 for some things and java 8 for other things.
 The toolchains plugin allows you to build all the modules together with different tools for different modules
