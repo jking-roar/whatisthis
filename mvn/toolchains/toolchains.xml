@@ -7,7 +7,7 @@
             <version>1.6</version>
         </provides>
         <configuration>
-            <jdkHome>/System/Library/Java/JavaVirtualMachines/1.6.0.jdk</jdkHome>
+            <jdkHome>/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/</jdkHome>
         </configuration>
     </toolchain>
     <toolchain>
@@ -16,7 +16,7 @@
             <version>1.8</version>
         </provides>
         <configuration>
-            <jdkHome>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk</jdkHome>
+            <jdkHome>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/</jdkHome>
         </configuration>
     </toolchain>
 </toolchains>
