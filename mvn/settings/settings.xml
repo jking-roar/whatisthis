@@ -4,7 +4,7 @@
     http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <profiles>
         <profile>
-            <id>xirrusStandard</id>
+            <id>standard</id>
         <properties>
             <catfish>tuna</catfish>
         </properties>
