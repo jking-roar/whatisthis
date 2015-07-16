@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF8"?>
+<toolchains>
+    <!-- JDK toolchains -->
+    <toolchain>
+        <type>jdk</type>
+        <provides>
+            <version>1.6</version>
+        </provides>
+        <configuration>
+            <jdkHome>/System/Library/Java/JavaVirtualMachines/1.6.0.jdk</jdkHome>
+        </configuration>
+    </toolchain>
+    <toolchain>
+        <type>jdk</type>
+        <provides>
+            <version>1.8</version>
+        </provides>
+        <configuration>
+            <jdkHome>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk</jdkHome>
+        </configuration>
+    </toolchain>
+</toolchains>
