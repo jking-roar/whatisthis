@@ -9,5 +9,6 @@
         <module>java6project</module>
         <module>java8project</module>
         <module>agnosticProject</module>
+        <module>submoduleparent</module>
     </modules>
 </project>
