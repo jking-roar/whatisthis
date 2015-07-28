@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.kingjoshdavid.Gallery">
+        <id name="identifier" type="integer">
+            <column name="id" />
+            <generator class="sequence"/>
+        </id>
+        <property name="curtain" type="string" column="curtain" />
+        <set name="members">
+            <key></key>
+            <one-to-many
+        </set>
+    </class>
+</hibernate-mapping>
