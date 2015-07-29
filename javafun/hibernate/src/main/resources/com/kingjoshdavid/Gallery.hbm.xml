@@ -8,9 +8,13 @@
             <generator class="sequence"/>
         </id>
         <property name="curtain" type="string" column="curtain" />
-        <set name="members">
-            <key></key>
-            <one-to-many
+        <set name="members" cascade="all">
+            <key column="gallery" />
+            <one-to-many class="com.kingjoshdavid.Peanut" not-found="ignore"/>
+        </set>
+        <set name="vips" cascade="all" inverse="true">
+            <key column="backdoorPass" />
+            <one-to-many class="com.kingjoshdavid.Peanut" not-found="ignore"/>
         </set>
     </class>
 </hibernate-mapping>
