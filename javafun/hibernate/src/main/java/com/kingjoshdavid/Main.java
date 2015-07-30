@@ -70,5 +70,8 @@ public class Main {
 
             session.close();
         }
+
+
+        HibernateUtil.shutdown();
     }
 }
