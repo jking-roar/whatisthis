@@ -21,5 +21,6 @@
         <module>plain-jain</module>
         <module>spring-boot</module>
         <module>hibernate</module>
+        <module>look-intellij</module>
     </modules>
 </project>
