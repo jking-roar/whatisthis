@@ -9,7 +9,7 @@ public class _︴௹_ {
         return new _︴௹_();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] ar$s) {
         _︴௹_ ₯ = new _︴௹_();
         ₯.﹍_₪_$(₯);
     }
