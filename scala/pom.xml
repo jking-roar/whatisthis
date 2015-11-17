@@ -6,5 +6,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>ternarize</module>
+        <module>lots</module>
     </modules>
 </project>
