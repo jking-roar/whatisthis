@@ -1,5 +1,6 @@
 import org.scalatest.{Matchers, FunSuite}
 
+import scala.language.implicitConversions
 
 //noinspection SpellCheckingInspection
 class TernarizeTest extends FunSuite with Matchers {
