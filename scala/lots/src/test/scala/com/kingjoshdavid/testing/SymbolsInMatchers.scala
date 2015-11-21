@@ -1,30 +1,31 @@
-package com.kingjoshdavid
+package com.kingjoshdavid.testing
 
-import org.scalatest.{Matchers, FunSuite}
+import org.scalatest.{FunSuite, Matchers}
 
-
-class ThingsDoneInScalaTest extends FunSuite with Matchers {
-  test("spaces in names") {
-    new `junk you can do`().`what is okay?`
-  }
-
+class SymbolsInMatchers extends FunSuite with Matchers {
   test("symbol equality") {
-    val expectedSymbol: Symbol = 'okay
-    val ok = new `junk you can do`().`what is okay?`
-    ok == 'okay should be(true)
+    'okay == 'okay should be(true)
   }
 
   ignore("symbols are special in be word") {
-    val expectedSymbol: Symbol = 'okay
-    val ok: Symbol = new `junk you can do`().`what is okay?`
-    ok should be ('okay)
+    'okay should be('okay) // fails due to ok having no .isOkay or .okay method
+  }
+
+  test("don't test this way, either (no assertion is made)") {
+    'okay should be eq 'okay
+    'okay should be eq 'whatever
+    'okay should be eq 'whatever shouldEqual false
+    'okay should be eq 'okay shouldEqual false
+
+    // cause:
+    val symbolClazz = classOf[Symbol]
+    'okay.getClass shouldEqual symbolClazz
+    val resultClazz = classOf[ResultOfBeWordForAny[_]]
+    ('okay should be).getClass shouldEqual resultClazz
   }
 
   test("match to symbols this way") {
-    val expectedSymbol: Symbol = 'okay
-    val ok: Symbol = new `junk you can do`().`what is okay?`
-    //noinspection ComparingUnrelatedTypes
-    ok should be eq 'okay
+    'okay shouldEqual 'okay
   }
 
   test("symbols in be word access state") {
@@ -48,8 +49,4 @@ class ThingsDoneInScalaTest extends FunSuite with Matchers {
   }
 
 
-}
-
-class `junk you can do` {
-  def `what is okay?`: Symbol = 'okay
 }

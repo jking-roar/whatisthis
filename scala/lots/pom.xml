@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>scala-exploration</artifactId>
         <groupId>com.kingjoshdavid</groupId>
         <version>1</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
     <artifactId>lots</artifactId>
-    <inceptionYear>2008</inceptionYear>
+
     <properties>
         <scala.version>2.11.5</scala.version>
         <scala.bin.version>2.11</scala.bin.version>
@@ -73,10 +73,6 @@
                     <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
                     <junitxml>.</junitxml>
                     <filereports>TestSuite.txt</filereports>
-                    <argLine>-Duser.timezone=UTC</argLine>
-                    <systemProperties>
-                        <sun.net.http.allowRestrictedHeaders>true</sun.net.http.allowRestrictedHeaders>
-                    </systemProperties>
                 </configuration>
                 <executions>
                     <execution>
@@ -97,7 +93,7 @@
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_2.11</artifactId>
+            <artifactId>scalatest_${scala.bin.version}</artifactId>
             <version>2.2.4</version>
             <scope>test</scope>
         </dependency>
