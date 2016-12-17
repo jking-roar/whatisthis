@@ -28,7 +28,7 @@ public class Client {
     }
 
     private static class DumbException extends Exception {
-        public DumbException(String msg, Exception cause) {
+        DumbException(String msg, Exception cause) {
             super(msg, cause);
         }
     }
