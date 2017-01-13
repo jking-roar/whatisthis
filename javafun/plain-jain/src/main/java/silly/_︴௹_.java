@@ -5,8 +5,13 @@ public class _︴௹_ {
     }
 
     private _︴௹_ _૱_() {
-        System.out.println(" ^__^ ");
+        _();
         return new _︴௹_();
+    }
+
+    private void _() {
+        String _ = "_";
+        System.out.println(" ^" + _ + _ + "^ ");
     }
 
     public static void main(String[] ar$s) {
