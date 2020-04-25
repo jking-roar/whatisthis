@@ -1,7 +1,7 @@
 package beans;
 
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang.builder.ToStringBuilder;
-import org.springframework.beans.BeanUtils;
 
 import java.lang.reflect.Field;
 
@@ -18,7 +18,11 @@ public class CopyProperties implements Runnable {
         PojoB b = new PojoB();
 
 
-        BeanUtils.copyProperties(a, b); // doesn't work on public fields
+        try {
+            BeanUtils.copyProperties(a, b); // doesn't work on public fields
+        } catch (Exception e) {
+            throw new RuntimeException("oh no!", e);
+        }
         System.out.println(ToStringBuilder.reflectionToString(a));
         System.out.println(ToStringBuilder.reflectionToString(b));
 
