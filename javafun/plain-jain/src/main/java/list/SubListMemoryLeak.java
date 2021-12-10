@@ -9,18 +9,8 @@ import java.util.List;
 
 public class SubListMemoryLeak {
     public static void main(String[] args) {
-        Fun<List<String>, List<String>> transmogrifierWithLeaks = new Fun<List<String>, List<String>>() {
-            @Override
-            public List<String> apply(List<String> input) {
-                return leakySubList(input);
-            }
-        };
-        Fun<List<String>, List<String>> transmogrifierWithoutLeaks = new Fun<List<String>, List<String>>() {
-            @Override
-            public List<String> apply(List<String> input) {
-                return fixedLeakSubList(input);
-            }
-        };
+        Fun<List<String>, List<String>> transmogrifierWithLeaks = SubListMemoryLeak::leakySubList;
+        Fun<List<String>, List<String>> transmogrifierWithoutLeaks = SubListMemoryLeak::fixedLeakSubList;
 
         System.out.println("not leaking memory");
         process(transmogrifierWithoutLeaks);
@@ -30,7 +20,7 @@ public class SubListMemoryLeak {
     }
 
     private static void process(Fun<List<String>, List<String>> transmogrifier) {
-        List<List<String>> subLists = new LinkedList<List<String>>();
+        List<List<String>> subLists = new LinkedList<>();
         int x = 0;
         for (int i = 0; i < 200; i++) {
             if (i % 20 == 0) {
@@ -45,7 +35,7 @@ public class SubListMemoryLeak {
     }
 
     private static List<String> fixedLeakSubList(List<String> strings) {
-        return new LinkedList<String>(leakySubList(strings));
+        return new LinkedList<>(leakySubList(strings));
     }
 
     private static List<String> leakySubList(List<String> fromList) {
@@ -55,17 +45,17 @@ public class SubListMemoryLeak {
     }
 
     private static List<String> makeBigList() {
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
 
         for (int i = 0; i < 20000; i++) {
-            list.add(someString(500));
+            list.add(someString());
         }
 
         return list;
     }
 
-    private static String someString(int maxLength) {
-        return RandomStringUtils.randomAlphabetic(RandomUtils.nextInt(maxLength) + 1);
+    private static String someString() {
+        return RandomStringUtils.randomAlphabetic(RandomUtils.nextInt(500) + 1);
     }
 }
 
