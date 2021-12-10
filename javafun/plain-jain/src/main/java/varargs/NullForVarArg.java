@@ -8,6 +8,7 @@ class NullForVarArg {
 
         final NullForVarArg thing = new NullForVarArg();
         thing.callMethod();
+        thing.callMethod(null);
         thing.callMethod((String)null);
         thing.callMethod("hello", "roger");
 
