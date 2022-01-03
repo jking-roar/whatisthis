@@ -1,0 +1,9 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>example</groupId>
+    <artifactId>utility</artifactId>
+    <version>1.0</version>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+</project>
