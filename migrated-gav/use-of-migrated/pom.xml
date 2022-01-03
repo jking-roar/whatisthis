@@ -4,11 +4,20 @@
     <artifactId>project</artifactId>
     <version>1.0</version>
 
-    <dependencies>
-        <dependency>
-            <groupId>example</groupId>
-            <artifactId>utility</artifactId>
-            <version>1.0</version>
-        </dependency>
-    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>example</groupId>
+                <artifactId>utility</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>hello</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

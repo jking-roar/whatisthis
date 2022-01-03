@@ -3,7 +3,8 @@
     <groupId>example</groupId>
     <artifactId>utility</artifactId>
     <version>1.0</version>
-    
+    <packaging>pom</packaging>
+
     <distributionManagement>
         <relocation>
             <groupId>com.example</groupId>
