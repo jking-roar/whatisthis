@@ -12,7 +12,7 @@ public class TimeLog {
         DateTimeFormatter format = DateTimeFormat.forPattern("HH:mm zzz");
         DateTime eastern = new DateTime(DateTimeZone.forID("America/New_York"))
                 .withMillisOfDay(0)
-                .withHourOfDay(15);
+                .withHourOfDay(17);
         DateTime pacific = eastern.withZone(DateTimeZone.forID("America/Los_Angeles"));
         DateTime utc = eastern.withZone(DateTimeZone.UTC);
 

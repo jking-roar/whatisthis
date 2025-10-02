@@ -1,0 +1,59 @@
+Townsfolk
+Steward -- You start knowing 1 good player.
+Noble -- You start knowing 3 players, 1 and only 1 of which is evil.
+Pixie -- You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.
+Empath -- Each night, you learn how many of your 2 alive neighbors are evil.
+Fortune Teller -- Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.
+Town Crier -- Each night*, you learn if a Minion nominated today.
+Oracle -- Each night*, you learn how many dead players are evil.
+Monk -- Each night*, choose a player (not yourself): they are safe from the Demon tonight.
+Amnesiac -- You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.
+Fisherman -- Once per game, during the day, visit the Storyteller for some advice to help your team win.
+Seamstress -- Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.
+Ravenkeeper -- If you die at night, you are woken to choose a player: you learn their character.
+Cannibal -- You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.
+
+Outsiders
+Sweetheart -- When you die, 1 player is drunk from now on.
+Damsel -- All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.
+Drunk -- You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.
+Hatter -- If you died today or tonight, the Minion & Demon players may choose new Minion & Demon characters to be.”
+Minions
+Poisoner -- Each night, choose a player: they are poisoned tonight and tomorrow day.
+Cerenovus -- Each night, choose a player & a good character: they are "mad" they are this character tomorrow, or might be executed.
+Fearmonger -- Each night, choose a player: if you nominate & execute them, their team loses. All players know if you choose a new player.
+Vizier -- All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.
+
+Demons
+No Dashii -- Each night*, choose a player: they die. Your 2 Townsfolk neighbors are poisoned.
+Imp -- Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.
+Ojo -- Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.
+Fang Gu -- Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]
+
+Traveler
+Harlot -- Each night*, choose a living player: if they agree, you learn their character, but you both might die.
+
+Players in the game:
+Milk (he/him) - Vizier
+Light (She/Her) - Dead executed
+MacKay (they/them) - Dead killed
+Emily  (She/Her) - Dead executed cere madness
+Ryan - Dead
+Dak - Dead executed by vizier and peeq executed at the same time
+Cosmo (Louis)
+Jodie (she/her) -
+Capelli (he/him) - claims empath.  is pixie, evil, or kohav is drunk thinking she is pixie empath
+JHunt (he/him) - Dead
+peeq - Dead executed from cere madness. had claimed oracle and now rejects that claim. revealed as steward
+kohab (she/her) is the drunk thinks she is the empath.
+Mullibok (he/him) - cannibal
+atreys (he/him) - Harlot
+slug - Dead
+jimothy - Dead
+
+
+Secret information:
+I, atreys, am the evil Harlot
+I have seen Ryan as the Monk, kohav as the Drunk and Jodie as the No Dashii
+I tried to visit Milk last night, but he refused.
+
